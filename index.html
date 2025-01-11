@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Verbinator</title>
+    <meta name="description" content="Revise French verb conjugations!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="p-5 text-bg-dark">
+    <h1>Verbinator</h1>
+    <p>Revise French verb conjugations!</p>
+    <div>
+      <div class="card text-bg-light p-3 mb-3 w-50">
+        <h2>Select verbs:</h2>
+        <div
+          style="display: flex; flex-flow: row wrap; max-height: fit-content"
+        >
+          <div style="flex: 1">
+            <input type="checkbox" id="parler" name="parler" value="parler" />
+            <label for="parler">
+              parler
+              <span class="badge text-bg-secondary">-er verbs</span></label
+            ><br />
+            <input type="checkbox" id="finir" name="finir" value="finir" />
+            <label for="finir">
+              finir
+              <span class="badge text-bg-secondary">-ir verbs</span></label
+            ><br />
+            <input type="checkbox" id="vendre" name="vendre" value="vendre" />
+            <label for="vendre">
+              vendre
+              <span class="badge text-bg-secondary">-re verbs</span></label
+            ><br />
+          </div>
+          <div style="flex: 1">
+            <input type="checkbox" id="aller" name="aller" value="aller" />
+            <label for="aller"> aller</label><br />
+            <input
+              type="checkbox"
+              id="sasseoir"
+              name="sasseoir"
+              value="sasseoir"
+            />
+            <label for="sasseoir"> s'asseoir</label><br />
+            <input type="checkbox" id="avoir" name="avoir" value="avoir" />
+            <label for="avoir"> avoir</label><br />
+            <input type="checkbox" id="battre" name="battre" value="battre" />
+            <label for="battre"> battre</label><br />
+            <input type="checkbox" id="boire" name="boire" value="boire" />
+            <label for="boire"> boire</label><br />
+            <input
+              type="checkbox"
+              id="conduire"
+              name="conduire"
+              value="conduire"
+            />
+            <label for="conduire"> conduire</label><br />
+            <input
+              type="checkbox"
+              id="connaitre"
+              name="connaitre"
+              value="connaitre"
+            />
+            <label for="connaitre"> connaître</label><br />
+            <input type="checkbox" id="courir" name="courir" value="courir" />
+            <label for="courir"> courir</label><br />
+            <input type="checkbox" id="croire" name="croire" value="croire" />
+            <label for="croire"> croire</label><br />
+            <input type="checkbox" id="devoir" name="devoir" value="devoir" />
+            <label for="devoir"> devoir</label><br />
+            <input type="checkbox" id="dire" name="dire" value="dire" />
+            <label for="dire"> dire</label><br />
+            <input type="checkbox" id="dormir" name="dormir" value="dormir" />
+            <label for="dormir"> dormir</label><br />
+            <input type="checkbox" id="ecrire" name="ecrire" value="ecrire" />
+            <label for="ecrire"> écrire</label><br />
+            <input
+              type="checkbox"
+              id="envoyer"
+              name="envoyer"
+              value="envoyer"
+            />
+            <label for="envoyer"> envoyer</label><br />
+            <input type="checkbox" id="etre" name="etre" value="etre" />
+            <label for="etre"> être</label><br />
+            <input type="checkbox" id="faire" name="faire" value="faire" />
+            <label for="faire"> faire</label><br />
+            <input
+              type="checkbox"
+              id="falloir"
+              name="falloir"
+              value="falloir"
+            />
+            <label for="falloir">
+              falloir
+              <span class="badge text-bg-secondary">il only</span></label
+            ><br />
+            <input type="checkbox" id="lire" name="lire" value="lire" />
+            <label for="lire"> lire</label><br />
+          </div>
+          <div style="flex: 1">
+            <input type="checkbox" id="mettre" name="mettre" value="mettre" />
+            <label for="mettre"> mettre</label><br />
+            <input type="checkbox" id="mourir" name="mourir" value="mourir" />
+            <label for="mourir"> mourir</label><br />
+            <input type="checkbox" id="ouvrir" name="ouvrir" value="ouvrir" />
+            <label for="ouvrir"> ouvrir</label><br />
+            <input type="checkbox" id="partir" name="partir" value="partir" />
+            <label for="partir"> partir</label><br />
+            <input
+              type="checkbox"
+              id="pleuvoir"
+              name="pleuvoir"
+              value="pleuvoir"
+            />
+            <label for="pleuvoir">
+              pleuvoir
+              <span class="badge text-bg-secondary">il only</span></label
+            ><br />
+            <input
+              type="checkbox"
+              id="pouvoir"
+              name="pouvoir"
+              value="pouvoir"
+            />
+            <label for="pouvoir"> pouvoir</label><br />
+            <input
+              type="checkbox"
+              id="prendre"
+              name="prendre"
+              value="prendre"
+            />
+            <label for="prendre"> prendre</label><br />
+            <input
+              type="checkbox"
+              id="recevoir"
+              name="recevoir"
+              value="recevoir"
+            />
+            <label for="recevoir"> recevoir</label><br />
+            <input type="checkbox" id="rire" name="rire" value="rire" />
+            <label for="rire"> rire</label><br />
+            <input type="checkbox" id="savoir" name="savoir" value="savoir" />
+            <label for="savoir"> savoir</label><br />
+            <input type="checkbox" id="sortir" name="sortir" value="sortir" />
+            <label for="sortir"> sortir</label><br />
+            <input type="checkbox" id="suivre" name="suivre" value="suivre" />
+            <label for="suivre"> suivre</label><br />
+            <input type="checkbox" id="tenir" name="tenir" value="tenir" />
+            <label for="tenir"> tenir</label><br />
+            <input type="checkbox" id="venir" name="venir" value="venir" />
+            <label for="venir"> venir</label><br />
+            <input type="checkbox" id="vivre" name="vivre" value="vivre" />
+            <label for="vivre"> vivre</label><br />
+            <input type="checkbox" id="voir" name="voir" value="voir" />
+            <label for="voir"> voir</label><br />
+            <input
+              type="checkbox"
+              id="vouloir"
+              name="vouloir"
+              value="vouloir"
+            />
+            <label for="vouloir"> vouloir</label><br />
+          </div>
+        </div>
+        <p>Select a tense:</p>
+        <select class="form-select" id="tense">
+          <option value="pres">Present</option>
+          <option value="fut">Future</option>
+          <option value="con">Conditional</option>
+          <option value="perf">Perfect</option>
+          <option value="imperf">Imperfect</option>
+          <option value="sub">Subjunctive</option>
+        </select>
+        <button
+          type="button"
+          class="btn btn-success mt-3"
+          onclick="verbinate()"
+        >
+          Verbinate!
+        </button>
+      </div>
+      <script src="index.js" async defer></script>
+      <div>
+        <div id="quiz"></div>
+      </div>
+    </div>
+  </body>
+</html>
