@@ -127,7 +127,7 @@ const verbsData = {
     imperf: ["allais", "allais", "allait", "allions", "alliez", "allaient"],
     sub: ["aille", "ailles", "aille", "allions", "alliez", "aillent"],
   },
-  "s'asseoir": {
+  sasseoir: {
     pres: [
       "m'assieds",
       "t'assieds",
@@ -1048,11 +1048,11 @@ let mark = (verb, tense) => {
   for (let index = 0; index < boxes.length; index++) {
     boxes[index].classList = [];
     boxes[index].classList.add("form-control", "form-control-sm");
-    if (boxes[index].value == answers[index]) {
+    if (boxes[index].value.trim() == answers[index]) {
       // boxes[index].style.background = "#00FF00";
       boxes[index].classList.add("text-bg-success");
       correct++;
-    } else if (boxes[index].value == "") {
+    } else if (boxes[index].value.trim() == "") {
       // do nothing
     } else {
       // boxes[index].style.background = "#FF0000";
